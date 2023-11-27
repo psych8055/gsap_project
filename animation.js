@@ -171,10 +171,10 @@ var t8 = gsap.timeline({
   const t9 = gsap.timeline({
     scrollTrigger: {
       trigger: ".tenth-page-bg",
-      start: "top center",
-      end: "bottom bottom",
+      start: "top top",
+      end: "50% 55%",
       scrub: 1,
-      markers: true,
+    //   markers: true,
       pin:true
     //   toggleClass: 'split'
     }

@@ -443,13 +443,25 @@ body
   position: absolute;
   bottom: 0;
 }
-.ninth-page.split .ninth-page-image1
+.ninth-page .ninth-page-image
+{
+  /* transition: all .5s;
+  left: 20%; */
+}
+.ninth-page .ninth-page-image3
+{
+  /* transition: all .5s;
+  left: 80%; */
+}
+/* .tenth-page.split .ninth-page-image1
 {
   transition: all .5s;
   left: 20%;
+  top: 100%;
 }
-.ninth-page.split .ninth-page-image3
+.tenth-page.split .ninth-page-image3
 {
   transition: all .5s;
   left: 80%;
-}
+  top:120%
+} */

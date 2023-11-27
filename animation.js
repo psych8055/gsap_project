@@ -149,13 +149,47 @@ tl6.to(".fifth-page-bg .fifth-page-image3",{
 //     opacity:"0.8"
 // },"sixth")
 
-const t8 = gsap.timeline({
+var t8 = gsap.timeline({
     scrollTrigger: {
       trigger: ".ninth-page",
-      start: "top 25%",
-      end: "bottom top",
+      start: "top 45%",
+      end: "15% top",
+      scrub: 1,
+    //   markers: true,
+    //   toggleClass: 'split'
+    }
+  })
+  t8.to(".ninth-page-image1",{
+    transition: "all .5s",
+    x:"-450",
+    },"eight")
+  t8.to(".ninth-page-image3",{
+        transition: "all .5s",
+        x:260,
+        zIndex:"0"
+    },"eight")
+  const t9 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".tenth-page-bg",
+      start: "top top",
+      end: "50% 55%",
       scrub: 1,
       markers: true,
-      toggleClass: 'split'
+      pin:true
+    //   toggleClass: 'split'
     }
   });
+  t9.to(".ninth-page-image1",{
+    transition: "all .1s ease-in",
+    // transform:"transformY(300px)",
+    top:"105%",
+    zIndex:"6",
+    bottom:"auto"
+},"ninth")
+t9.to(".ninth-page-image3",{
+    transition: "all .1s ease-in",
+    // transform:"transformY(300px)",
+    top:"150%",
+    zIndex:"6",
+    bottom:"auto"
+},"ninth")
